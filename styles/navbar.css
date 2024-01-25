@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@300;400&display=swap');
 
 
-nav{
-    width: 80vw;
+nav {
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: #4942E4;
     padding: 1px 10%;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1000;
 }
+
 #team{
     width: 90px;
 }
