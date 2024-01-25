@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@300;400&display=swap');
+
+
+nav{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    background-color: #4942E4;
+    padding: 1px 10%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+}
+#team{
+    width: 90px;
+}
+
+#menus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 25px;
+}
+
+#menus a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease; 
+    position: relative;
+}
+
+#menus a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFB000;
+    transition: width 0.3s ease; 
+}
+
+#menus a:hover {
+    color: #FFB000;
+}
+
+#menus a:hover::after {
+    width: 100%;
+}
