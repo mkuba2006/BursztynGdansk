@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@300;400&display=swap');
+#second{
+    position: relative;
+    height: auto;
+    padding-bottom: 200px;
+}
+#second h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+/* #fischer{
+    width: 350px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 20px;
+    
+} */
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+#one {
+    background-image: url("../images/backgrounds/fb.jpg");
+    width: 370px;
+    aspect-ratio: 2/3;
+    border-radius: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#two {
+    word-wrap: break-word;
+    width: auto;
+    font-size: 18px;
+    max-width: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+    #two{
+        font-size: 70%;
+        padding: 0 5%;
+    }
+}

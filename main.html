@@ -6,6 +6,7 @@
     <title>Fc ponalewce</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/second.css">
 </head>
 <body>
     <nav>
@@ -20,16 +21,37 @@
             <a href="#">Aktualności</a>
             <a href="#">Skład</a>
             <a href="#">Terminarz</a>
-            <a href="#">Tabela Ligowa</a>
+            <a href="#">Tabela</a>
             <a href="#">Galeria</a>
             <a href="#">Kontakt</a>
         </div>
     </nav>
     <section id="main">
-        <p>F.C Ponalewce</p>
+        <div id="overlay">
+            <div>
+                <p>F.C Ponalewce</p>
+                <a id="more" href="#second">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <img id="background-img" src="./images/backgrounds/sahara1.png" alt="Background Image">
     </section>
 
+
     <section id="second">
+        <h1>O Nas</h1>
+        <div id="content">
+            <div id="one">
+            </div>
+            <div id="two">
+                <b>FC Ponalewce - Gdańska Drużyna Futbolowa</b>
+                <p><b>Jesteśmy FC Ponalewce</b>, a nasza futbolowa historia rozpoczęła się 1 czerwca 2023 roku. Pomimo krótkiego stażu, nasze zangażowanie, rozwijanie umiejętności i wspólne wartości sprawiają, że z dumą reprezentujemy Gdańsk na boisku i poza nim. Choć jeszcze świeżo na futbolowej mapie, nasza drużyna to zgrana ekipa, zbudowana na wspólnej pasji do futbolu.</p>
+                <p>Uczestniczymy w lokalnych rozgrywkach z niebywałą determinacją. Mimo krótkiego czasu istnienia, już teraz czujemy, że tworzymy nie tylko drużynę, lecz prawdziwą piłkarską rodzinę. Nasza historia nabiera tempa, ale jesteśmy gotowi na wszystko, co przyniesie przyszłość.</p>
+                <p>Zapraszamy do śledzenia naszej piłkarskiej podróży - jesteśmy <b>FC Ponalewce</b>, gotowi na wyzwania, zbudowani na pasji i determinacji!</p>
+            </div>
+        </div>
+        
     </section>
     <section id="third">
     </section>
@@ -39,7 +61,11 @@
     
 
 
-
+    <footer></footer>
+    <script src="./scripts/main.js"></script>
     <script src="./scripts/nabar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="crossorigin="anonymous"></script>
+    
+    
 </body>
 </html>
