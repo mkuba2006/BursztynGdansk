@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@300;400&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+            width: 100vw;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 200;
+        }
+
+        #dropdown {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        }
+
+        #dropdown-button {
+            padding: 12px;
+            cursor: pointer;
+            color: white;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            z-index: 1;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .dropdown-content {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            background-color: #3333339f;
+            color: white;
+            transition: transform 0.5s ease;
+            transform: translateY(-100px);
+        }
+
+        .dropdown-content.active {
+            transform: translateY(47px);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="dropdown">
+        <span id="dropdown-button" onclick="toggleDropdown()">Pokaż więcej</span>
+    </div>
+</header>
+<div class="dropdown-content">
+    <a href="#">Opcja 1</a>
+    <a href="#">Opcja 2</a>
+    <a href="#">Opcja 3</a>
+</div>
+
+<script>
+    function toggleDropdown() {
+        var dropdown = document.querySelector(".dropdown-content");
+        console.log(dropdown);
+        dropdown.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>

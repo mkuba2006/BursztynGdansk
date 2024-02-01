@@ -8,7 +8,7 @@ nav {
     background-color: #ffffff;
     padding: 1px 18%;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: sticky;
     top: 0;
     box-sizing: border-box;

@@ -1,6 +1,3 @@
-const button = document.querySelector("#section05 > a");
-console.log(button);
-
 
 // powolne przekierowywanie linku 
 document.getElementById("more").addEventListener("click", (e) => {
@@ -19,8 +16,8 @@ window.addEventListener('scroll', function() {
     if ((height + scroll / 10) <= height * 2) {
         var blurAmount = scroll / 10000;
 
-        bgImg.style.height = (height + scroll / 10) + 'vh';
-        bgImg.style.marginTop = -(scroll / 100) + 'px';
+        bgImg.style.height = (height + scroll / 30) + 'vh';
+        bgImg.style.marginTop = -(scroll / 1000) + 'px';
         bgImg.style.webkitFilter = 'blur(' + blurAmount + 'px)';
         bgImg.style.filter = 'blur(' + blurAmount + 'px)';
     }
@@ -52,3 +49,20 @@ function scrollFunction() {
     }
   });
 }
+
+
+
+// gdzie jest 
+
+function obliczWysokosci() {
+  const main = document.getElementById("main");
+  const second = document.getElementById("second");
+
+  let wys_main = main.clientHeight;
+  let wys_second = second.clientHeight;
+
+  console.log("Wysokość main: ", wys_main);
+  console.log("Wysokość second: ", wys_second);
+}
+
+window.addEventListener('load', obliczWysokosci);
