@@ -6,7 +6,7 @@ nav {
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    padding: 1px 18%;
+    padding: 1px 13vw;
     justify-content: space-between;
     flex-wrap: nowrap;
     position: sticky;
@@ -56,4 +56,14 @@ nav {
 
 #menus a:hover::after {
     width: 100%;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#log {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 220px;
+    transition: width 0.5s ease;
 }

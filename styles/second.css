@@ -8,7 +8,6 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 80px;
     font-size: 40px;
 }
 
@@ -53,4 +52,22 @@
         font-size: 70%;
         padding: 0 5%;
     }
+}
+
+
+#scroll-svg{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 70px 0;
+}
+#path2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#scroll-svg:last-child{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 20px 0;
 }

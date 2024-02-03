@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const as = document.querySelectorAll("#menus a");
 const team = document.getElementById("team");
+var log = document.getElementById('log');
+const bef = log.style.width;
 window.onscroll = () => scrollFunction();
 
 function scrollFunction() {
@@ -43,9 +45,11 @@ function scrollFunction() {
     if (scrollTop > 150) {
       a.classList.add("smallFontSize");
       team.style.width="70px";
+      log.style.width="170px";
     } else {
       a.classList.remove("smallFontSize");
       team.style.width="90px";
+      log.style.width= bef;
     }
   });
 }

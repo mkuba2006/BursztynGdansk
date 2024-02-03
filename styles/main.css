@@ -117,3 +117,39 @@ body {
       opacity: 0;
     }
 }
+
+
+
+
+#dalej {
+    z-index: 2;
+    display: inline-block;
+    color: #fff;
+    font: normal 400 20px/1 "Josefin Sans", sans-serif;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    background: rgb(41, 41, 41);
+    padding: 10px 10px 9px 10px;
+    border: none;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#dalej:hover{
+    scale: 1.05;
+    filter: brightness(80%);
+}
+
+#dalej_a{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dalej_a img{
+    width: 35px;
+}
+
